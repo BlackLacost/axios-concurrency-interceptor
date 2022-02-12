@@ -1,0 +1,21 @@
+{
+  "name": "axios-concurrency-interceptor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ilya Lisin <blacklacost@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
