@@ -4,6 +4,7 @@
     "module": "commonjs",
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
     "skipLibCheck": true,
+    "declaration": true,
     "sourceMap": true,
     "outDir": "./dist",
     "moduleResolution": "node",
@@ -22,6 +23,9 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "baseUrl": "."
+  },
+  "ts-node": {
+    "files": true // For work merging declaration in ts-node
   },
   "exclude": ["node_modules"],
   "include": ["./src/**/*.ts"]

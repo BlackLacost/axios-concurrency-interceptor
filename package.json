@@ -2,9 +2,19 @@
   "name": "axios-concurrency-interceptor",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackLacost/axios-concurrency-interceptor.git"
   },
   "keywords": [],
   "author": "Ilya Lisin <blacklacost@gmail.com>",
@@ -15,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^17.0.17",
     "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   }
